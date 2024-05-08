@@ -4,10 +4,6 @@
   </div>
 </template>
 
-<script setup lang="ts" name="Test">
+<script setup lang="ts" name="Test"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
