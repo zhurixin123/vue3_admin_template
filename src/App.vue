@@ -1,15 +1,23 @@
 <template>
   <div>
-    <h1>我新增一个标题</h1>
+    <el-button type="primary" size="default" :icon="Plus">Primary</el-button>
+    <el-button type="success" size="small" :icon="Edit">编辑按钮</el-button>
+    <el-button type="danger" size="default" :icon="Delete">删除按钮</el-button>
+  </div>
+  <div class="demo-pagination-block">
+    <div class="demonstration">Jump to</div>
+    <el-pagination
+      layout="prev, pager, next, jumper"
+      :total="1000"
+    />
+    <Test/>
   </div>
 </template>
 
 <script setup lang="ts">
-for (let i = 0; i < 100; i++) {
-  console.log(i)
-}
-
-let str = '我是祖国的老花骨朵'
+  // 引入图标组件
+  import { Plus, Edit, Delete } from '@element-plus/icons-vue'
+  import Test from '@/components/Test.vue'
 </script>
 
 <style scoped></style>
